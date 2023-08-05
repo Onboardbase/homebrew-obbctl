@@ -10,7 +10,7 @@ class Obbctl < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Onboardbase/ctl/releases/download/v0.0.1/obbctl_Darwin_arm64.tar.gz"
-      sha256 "e70a7e29e5ed586440fb246f4edca892fc02e2c960215570497f60689504a520"
+      sha256 "453afc65e3c5c525ae0d0561012f4b8d6103f209618b4b78fb5e95a9d43ae978"
 
       def install
         bin.install "obbctl"
@@ -18,7 +18,7 @@ class Obbctl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/Onboardbase/ctl/releases/download/v0.0.1/obbctl_Darwin_x86_64.tar.gz"
-      sha256 "f4d9ad9e9fe727a515fa59094ba1c9a7fa0c45ca8fa111e02a26f31e8c91e750"
+      sha256 "d3b03a6f236d4f97e1c538f4b94d573c9c4b9f4504d779f75e7e5ad8e9ad1f19"
 
       def install
         bin.install "obbctl"
@@ -29,7 +29,7 @@ class Obbctl < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Onboardbase/ctl/releases/download/v0.0.1/obbctl_Linux_arm64.tar.gz"
-      sha256 "88219cef6cc3884252745b12889b8b9acc5f85b132ecd37584dcb2821d036744"
+      sha256 "338bf18ffe9cdaab211eac0b41dc10e6efa8c4039a4de7221b565652586ea944"
 
       def install
         bin.install "obbctl"
@@ -37,7 +37,7 @@ class Obbctl < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/Onboardbase/ctl/releases/download/v0.0.1/obbctl_Linux_x86_64.tar.gz"
-      sha256 "f0e780b4e15abbeb87886936bf70a353f19676b1262988194a7c62e8225c0f16"
+      sha256 "b5c56b30fd58dae419ddf3c2c6c62484e04fcca13a7ac76676c35f9730e2c594"
 
       def install
         bin.install "obbctl"
