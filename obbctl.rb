@@ -5,20 +5,20 @@
 class Obbctl < Formula
   desc ""
   homepage "https://github.com/Onboardbase/obbctl"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.1/obbctl_Darwin_arm64.tar.gz"
-      sha256 "bebf40f06c3f9b1e6bf9459079a986d6268dffe793ee771209e2ce9363f95d4c"
+      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.2/obbctl_Darwin_arm64.tar.gz"
+      sha256 "ed616008ebc9fbd3d9e1266f0df7abba01af9c1d459dff085b18ad824afb459d"
 
       def install
         bin.install "obbctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.1/obbctl_Darwin_x86_64.tar.gz"
-      sha256 "158da9a8949d4412f591ce5cad15e241653ecd470e6ab38bc45b06989099ae26"
+      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.2/obbctl_Darwin_x86_64.tar.gz"
+      sha256 "fe529d7f93d7a3746fc97136ea2d52f9fa6ce4efce3f6bd3e8eb0eec860c36fb"
 
       def install
         bin.install "obbctl"
@@ -28,16 +28,16 @@ class Obbctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.1/obbctl_Linux_arm64.tar.gz"
-      sha256 "7ffce2cc2e41e43201f20c440f076b1483fbc68c13c762c5a10014d3bc93733b"
+      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.2/obbctl_Linux_arm64.tar.gz"
+      sha256 "af283b85ba4fc949cacc962b2b3a1f22a075d1cf416377a05f9f03124bdc4478"
 
       def install
         bin.install "obbctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.1/obbctl_Linux_x86_64.tar.gz"
-      sha256 "163bf54cc742a79d78aff40ce9f9cb488438c6b0c31d92a2162410299a650355"
+      url "https://github.com/Onboardbase/obbctl/releases/download/v0.0.2/obbctl_Linux_x86_64.tar.gz"
+      sha256 "0d1367b5c61212040b20e7082665c4a94198bb9169073345070063ccc3b0f0b7"
 
       def install
         bin.install "obbctl"
