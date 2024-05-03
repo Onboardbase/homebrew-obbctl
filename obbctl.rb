@@ -5,20 +5,20 @@
 class Ctl < Formula
   desc ""
   homepage "https://github.com/Onboardbase/ctl"
-  version "0.0.3-beta"
+  version "0.0.4-beta"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.3-beta/ctl_Darwin_arm64.tar.gz"
-      sha256 "5fb570ae2a22e742de98027942daa798762ca3d812202eb13f2cba7c9559ce7c"
+      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.4-beta/ctl_Darwin_arm64.tar.gz"
+      sha256 "f1d40e64ebc3a65839768a16e0701e181a21af9f3c87d0d872857eb493e79f99"
 
       def install
         bin.install "ctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.3-beta/ctl_Darwin_x86_64.tar.gz"
-      sha256 "0a4f35cec502a82283bb58385130fa929c59adbd6fa6927feaadb883ea3cc086"
+      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.4-beta/ctl_Darwin_x86_64.tar.gz"
+      sha256 "56a96b951ce4e79b490a6ecbb5a07356134787ef7b6d6c15186110869387b6d4"
 
       def install
         bin.install "ctl"
@@ -28,16 +28,16 @@ class Ctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.3-beta/ctl_Linux_arm64.tar.gz"
-      sha256 "b336087237a759e8756e0e2e77944c12f97ef79dfe31cf72877d1b6ccfd38d63"
+      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.4-beta/ctl_Linux_arm64.tar.gz"
+      sha256 "259dfd5d4b084c7067d1b9968b7b9edd032095115b1992f5b3c884d4a465004b"
 
       def install
         bin.install "ctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.3-beta/ctl_Linux_x86_64.tar.gz"
-      sha256 "d8db90a28d865cdddf3ceef23feb71c66a8a4ea5c9521038238eb9f842d400bb"
+      url "https://github.com/Onboardbase/ctl/releases/download/v0.0.4-beta/ctl_Linux_x86_64.tar.gz"
+      sha256 "feb8c6809b94902bcad66288752aafafa87d563bc7c3e4860565bd199ce3b815"
 
       def install
         bin.install "ctl"
